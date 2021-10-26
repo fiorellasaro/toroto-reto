@@ -1,0 +1,16 @@
+//Your customizations must come before bootstrap import
+
+$enable-shadows: false;
+$primary: #1930db;
+$secondary: #4d4d4d;
+$info: #f2f2f2;
+
+
+
+$body-color:  #4d4d4d;
+$body-bg: #f2f2f2;
+
+
+// @import '../scss/bootstrap.scss';
+
+@import '../styles/scss/bootstrap.scss';
