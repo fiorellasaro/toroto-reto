@@ -1,11 +1,9 @@
-import Head from 'next/head'
+
 import Link from 'next/link'
 
 
-import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Container, Row, Col} from 'react-bootstrap'
 
-import Image from 'next/image'
-import LogoName from '../assets/logo.svg'
 
 
 const project = () => (
