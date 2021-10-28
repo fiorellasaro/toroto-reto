@@ -1,12 +1,8 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
-
-import Image from 'next/image'
-import LogoName from '../assets/logo.svg'
-
+import Map from '../components/map'
 
 const Home = () => (
   <>
@@ -17,8 +13,8 @@ const Home = () => (
 
     <Container className="container-fluid">
 
-      <Row className="pt-5">
-        <Col className="my-auto">
+      <Row>
+        <Col className="banner-content col-md-6">
           <h1 className="font-weight-bolder">
             <strong>
               Somos desarrolladores de proyectos
@@ -30,10 +26,13 @@ const Home = () => (
 
           <a className="btn btn-secondary btn-lg" href="https://twitter.com/mike_alche">
             Proponer un proyecto
-            </a>
+          </a>
         </Col>
       </Row>
     </Container>
+    <section fluid>
+      <Map/>
+    </section>
 
   </>
 )
