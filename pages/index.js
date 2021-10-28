@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import Map from '../components/map'
 
-const Home = () => (
+const Home = ({projectsData}) => (
   <>
     <Head>
       <title>Toroto - Reto</title>
@@ -14,7 +14,7 @@ const Home = () => (
     <Container className="container-fluid">
 
       <Row>
-        <Col className="banner-content col-md-6">
+        <Col className="banner-content col-md-4">
           <h1 className="font-weight-bolder">
             <strong>
               Somos desarrolladores de proyectos
@@ -30,11 +30,30 @@ const Home = () => (
         </Col>
       </Row>
     </Container>
-    <section fluid>
-      <Map/>
+    <section fluid='true'>
+      <Map projectsData= {projectsData} />
     </section>
 
   </>
 )
 
 export default Home
+
+
+export async function getStaticProps() {
+  const data = await fetch('https://fieldops-api.toroto.mx/api/projects');
+  const projects = await data.json();
+  const { data: projectsData } = projects;
+
+  if (!projectsData) {
+    return {
+       notFound: true,
+    }
+ }
+
+ return {
+    props: {
+      projectsData
+    }, // will be passed to the page component as props
+ }
+}
