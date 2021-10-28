@@ -24,7 +24,7 @@ const Home = ({projectsData}) => (
             Lorem ipsum
           </p>
 
-          <a className="btn btn-secondary btn-lg" href="https://twitter.com/mike_alche">
+          <a className="btn btn-secondary btn-lg" href="/">
             Proponer un proyecto
           </a>
         </Col>
