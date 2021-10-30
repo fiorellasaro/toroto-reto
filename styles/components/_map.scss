@@ -1,0 +1,48 @@
+#circle-dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: $secondary;
+    cursor: pointer;
+    :hover * {
+        background: white;
+    }
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.tooltip-inner {
+    width: 423px !important;
+    height: 355px;
+    left: 0px;
+    border-radius: 20px;
+    // padding: 32px, 32px, 32px, 32px;
+
+    color: $gris;
+    // margin-right: -100px !important;
+}
+
+#mytooltip > .tooltip-inner {
+    max-width: 100%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 1) !important;
+    padding: 0;
+  }
+  
+  #mytooltip > .tooltip-arrow {
+    width: 100%;
+
+  }
+
+
+  #mytooltip{
+      img{
+          width: 423px;
+          height: 127px !important;
+          border-radius: 20px 20px 0px 0px;
+          padding: 0;
+          object-fit: cover;
+      }
+  }

@@ -1,8 +1,10 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Image from 'next/image'
 
 import { Container, Row, Col } from 'react-bootstrap'
 
 import Map from '../components/map'
+
 
 const Home = ({projectsData}) => (
   <>
@@ -33,6 +35,15 @@ const Home = ({projectsData}) => (
     <section fluid='true'>
       <Map projectsData= {projectsData} />
     </section>
+    <section>
+      <h1 className="font-weight-bolder">
+        <strong>
+          Todos nuestros proyectos
+        </strong>
+      </h1>
+    </section>
+
+
 
   </>
 )
