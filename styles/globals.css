@@ -14,3 +14,7 @@ a {
   box-sizing: border-box;
   font-family: Roboto;
 }
+
+h1{
+  font-size: 48px;
+}

@@ -4,3 +4,19 @@
     z-index: 2;
 }
 
+.projects-cards{
+    &-container{
+    margin: 104px auto 94px auto;
+    width: 80%;
+    }
+    &-section-title{
+        margin-bottom: 32px;
+    }
+     
+}
+
+.project-cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    // grid-gap: 40px;
+}

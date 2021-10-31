@@ -10,18 +10,15 @@ import LogoName from '../assets/logo.svg'
 
 const Navb = () => (
   <>
-
-
-
     <Navbar bg="primary" variant="dark" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">
-        <Image
-            src={LogoName} // Route of the image file
-            height={56} // Desired size with correct aspect ratio
-            width={89} // Desired size with correct aspect ratio
-            alt="Toroto logo"
-          />{' '}
+        <Navbar.Brand href="/">
+            <Image
+              src={LogoName} // Route of the image file
+              height={56} // Desired size with correct aspect ratio
+              width={89} // Desired size with correct aspect ratio
+              alt="Toroto logo"
+            />{' '}
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
