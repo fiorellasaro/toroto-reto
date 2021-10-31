@@ -1,46 +1,15 @@
 import ReactMapGL , {Source, Layer, Marker} from 'react-map-gl';
 import {  useState  } from 'react';
 import { OverlayTrigger, Tooltip, Overlay } from 'react-bootstrap'
-import Img01 from '../assets/img_project_1.webp';
-import Img02 from '../assets/img_project_2.webp';
-import Img03 from '../assets/img_project_3.webp';
-import Img04 from '../assets/img_project_4.webp';
 import Image from 'next/image'
 import Link from 'next/link';
+import imagesProjects from '../shared/_imageProjects';
+import {getIndex} from '../shared/_imageProjects';
 
 
 
 
 function map({ projectsData }) {
-
-  const imagesProjects = [
-    {
-      id: 'P001',
-      alt: "project 1 image",
-      src: Img01
-    },
-    {
-      id: 'P002',
-      alt: "project 2 image",
-      src: Img02
-    },
-    {
-      id: 'P003',
-      alt: "project 3 image",
-      src: Img03
-    },
-    {
-      id: 'P004',
-      alt: "project 4 image",
-      src: Img04
-    }
-  ]
-
-
-
-  function getIndex(id){
-    return (imagesProjects.map(e => e.id).indexOf(id))
-  }
 
   const [viewport, setViewport] = useState({
         width: '100%',
@@ -48,8 +17,6 @@ function map({ projectsData }) {
         zoom: 5,
         longitude: -99.1319437,
         latitude: 18.47103,
-        // longitude: center.longitude,
-        // latitude: center.latitude,
   });
 
 

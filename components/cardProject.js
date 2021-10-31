@@ -1,43 +1,37 @@
 import React from 'react'
 import Image from 'next/image'
-import Img01 from '../assets/img_project_1.webp';
-import Img02 from '../assets/img_project_2.webp';
-import Img03 from '../assets/img_project_3.webp';
-import Img04 from '../assets/img_project_4.webp';
+import imagesProjects from '../shared/_imageProjects';
+import {Button} from 'react-bootstrap'
+import Link from 'next/link'
+import Services from '../components/services'
+
 
 function cardProject(props) {
 
-    const imagesProjects = [
-        {
-          id: 'P001',
-          alt: "project 1 image",
-          src: Img01
-        },
-        {
-          id: 'P002',
-          alt: "project 2 image",
-          src: Img02
-        },
-        {
-          id: 'P003',
-          alt: "project 3 image",
-          src: Img03
-        },
-        {
-          id: 'P004',
-          alt: "project 4 image",
-          src: Img04
-        }
-      ]
 
     return (
-        <div className="card-project-container" key={props.index}>
+        <div className="card-project-container shadow mb-4" key={props.index}>
             <Image src={imagesProjects[props.index].src} alt={imagesProjects[props.index].alt} />
-            <div className="card-tooltip-container">
-                <p className="card-tooltip-location">{props.project.location}</p>
-                <h2 className="card-tooltip-name">{props.project.name}</h2>
-                <p className="card-tooltip-description">{props.project.description}</p>
-            </div>   
+            <div className="card-project-info">
+                <p className="card-project-location">{props.project.location}</p>
+                <h2 className="card-project-name">{props.project.name}</h2>
+                <p className="card-project-description">{props.project.description}</p>
+                <div className="card-project-services">
+                    {
+                        props.project.services.map(service =>{
+                            return (
+                                <Services service={service} key={service}/>
+                            )
+                        })
+                    }
+                </div>
+
+                <Link href={`/projects/${props.project.id}`}>
+                    <Button type="button" className="btn btn-outline-dark btn btn-info">VER PROYECTO COMPLETO</Button> 
+                </Link>
+            </div>  
+
+
         </div>
     )
 }

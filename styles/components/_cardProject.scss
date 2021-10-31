@@ -1,7 +1,10 @@
 .card-project{
     &-container{
         width: 512px;
-        max-height: 544px;
+        max-height: 700px;
+        border-radius: 20px !important;
+        color: $negro-toroto;
+
         img{
             width: 512px;
             height: 172px !important;
@@ -9,6 +12,41 @@
             padding: 0;
             object-fit: cover;
         }
+        .btn{
+            width: 100% !important;
+        }
+
+    }
+    &-location{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+    }
+    &-name{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 36px;
+    }
+    &-description{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+    }
+    &-info{
+        padding: 24px 32px 32px 32px;
+    }
+    &-services{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        gap: 5px;
     }
     
 }
