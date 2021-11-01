@@ -1,0 +1,111 @@
+.general{
+    &-container{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .image-detail{
+            max-width: 512px !important;
+            max-height: 440px !important;
+            min-width: 512px !important;
+            min-height: 440px !important;
+            border-radius: 20px !important;
+            margin: 0;
+        }
+
+    }
+    &-description{
+        display:flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        &-text{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+        }
+    }
+    &-name{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 56px;
+
+    }
+    &-location{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.18px;
+        
+    }
+    &-services{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        gap: 5px;
+    }
+
+    &-problem{
+        display: flex;
+        flex-direction: column;
+        padding-top: 64px;
+        padding-bottom: 104px;
+        h2{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0.18px;
+        }
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+        }
+    }
+    &-implement{
+        display: flex;
+        flex-direction: column;
+        &-title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 35%;
+            img{
+                width: 15px;
+                height: 15px;
+            }  
+        }
+        h2{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+
+
+}
+
+.accordion-button{
+    font-size: 20px !important;
+    border: 0;
+    border-bottom: 1px solid $secondary !important;
+    :active{
+        outline:none;
+        border: 0;
+    }
+    :focus{
+        outline:none;
+        border: 0;
+    }
+}
+

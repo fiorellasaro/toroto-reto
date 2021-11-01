@@ -29,6 +29,9 @@ h1{
 
 // @import '../scss/bootstrap.scss';
 // @import '../node_modules/react-bootstrap/';
-@import '../styles/scss/bootstrap.scss';
+// @import '../styles/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import "./pages/_home";
 @import "./components/_map"; @import "./components/_popup";   @import "./components/_cardProject"; @import "./components/_services";
+@import './pages/projects/[id]';
+@import './layout/_navbar';

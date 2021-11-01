@@ -10,7 +10,7 @@ import LogoName from '../assets/logo.svg'
 
 const Navb = () => (
   <>
-    <Navbar bg="primary" variant="dark" expand="lg" sticky="top">
+    <Navbar className="nav-bg" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="/">
             <Image
@@ -28,7 +28,10 @@ const Navb = () => (
             <Nav.Link href="/about">SOBRE TOROTO</Nav.Link>
             <Nav.Link href="/about">BLOG</Nav.Link>
             <Nav.Link href="/about">META REGISTRO</Nav.Link>
-            <a href="/contact" className="btn btn-info">CONTACTO</a>
+            <Button variant="light">            
+            <a href="/contact">CONTACTO</a>
+            </Button>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

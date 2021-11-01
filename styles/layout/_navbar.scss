@@ -1,0 +1,10 @@
+.nav-bg{
+    background-color: $primary !important;
+}
+
+.nav-link{
+    color: white !important;
+    :hover{
+        opacity: 0.5;
+    }
+}

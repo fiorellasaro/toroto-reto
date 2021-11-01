@@ -27,7 +27,7 @@ function cardProject(props) {
                 </div>
 
                 <Link href={`/projects/${props.project.id}`}>
-                    <Button type="button" className="btn btn-outline-dark btn btn-info">VER PROYECTO COMPLETO</Button> 
+                    <Button type="button" variant="outline-dark">VER PROYECTO COMPLETO</Button> 
                 </Link>
             </div>  
 
