@@ -32,6 +32,6 @@ h1{
 // @import '../styles/scss/bootstrap.scss';
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import "./pages/_home";
-@import "./components/_map"; @import "./components/_popup";   @import "./components/_cardProject"; @import "./components/_services";
+@import "./components/_map"; @import "./components/_popup";   @import "./components/_cardProject"; @import "./components/_services"; @import "./components/_impact";
 @import './pages/projects/[id]';
-@import './layout/_navbar';
+@import './layout/_navbar'; @import './layout/_footer';

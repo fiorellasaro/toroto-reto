@@ -5,7 +5,9 @@ import imageProjects from '../../shared/_imageProjects'
 import { Container, Row, Col } from "react-bootstrap";
 import Accordion from 'react-bootstrap/Accordion'
 import Services from '../../components/services'
+import Impact from '../../components/impact'
 import TooltilIcon from '../../assets/tooltip_icon.svg'
+import MapImage from '../../assets/map.webp'
 
 const project = (props) => {
   const { projectProp } = props;
@@ -59,6 +61,27 @@ const project = (props) => {
 
           </Accordion>
         </div>
+        <div className="general-map">
+          <h2>
+            Mapa de obras
+          </h2>
+          <Image src={MapImage} alt="map image obras" width={1040} height={480}></Image>
+        </div>
+        <div className="general-impact-container">
+          <h2 className="general-impact-title">
+              Impacto
+          </h2>
+        <div className="general-impact">
+                      {
+                          projectProp.impact.map((imp, index) =>{
+                              return (
+                                  <Impact  name={imp.name}  value={imp.value} key={index}/>
+                              )
+                          })
+                      }
+        </div>
+        </div>
+
       </Container>
     </>
   );
