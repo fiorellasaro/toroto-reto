@@ -6,6 +6,7 @@ import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Butto
 
 import Image from 'next/image'
 import LogoName from '../assets/logo.svg'
+import ExternalIcon from '../assets/external-link.svg'
 
 
 const Navb = () => (
@@ -27,9 +28,14 @@ const Navb = () => (
             <Nav.Link href="/">PROYECTOS</Nav.Link>
             <Nav.Link href="/about">SOBRE TOROTO</Nav.Link>
             <Nav.Link href="/about">BLOG</Nav.Link>
-            <Nav.Link href="/about">META REGISTRO</Nav.Link>
-            <Button variant="light">            
-            <a href="/contact">CONTACTO</a>
+            <Nav.Link href="/about">
+            <Image className="nav-link-image" src={ExternalIcon} alt="external link meta registro"        
+              height={15} // Desired size with correct aspect ratio
+              width={15}></Image>
+              META REGISTRO
+             </Nav.Link>
+            <Button variant="light" className="nav-button">            
+            CONTACTO
             </Button>
 
           </Nav>
