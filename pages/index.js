@@ -28,26 +28,32 @@ const Home = ({projectsData}) => {
 
     <Container className="container-fluid main-container">
 
-      <Row>
-        <Col className="banner-content col-md-4">
-          <h1>
-              Somos desarrolladores de proyectos
-          </h1>
-          <p className="lead">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </p>
+      <Col className="content">
+        <Row>
+          <Col className="banner-content col-md-4">
+            <h1>
+                Somos desarrolladores de proyectos
+            </h1>
+            <p className="lead">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
 
-          <a className="btn btn-secondary btn-lg" href="/">
-            Proponer un proyecto
-          </a>
+            <a className="btn btn-secondary btn-lg" href="/">
+              Proponer un proyecto
+            </a>
 
-            <div onClick={executeScroll} className="button-see-more-projects-container">
-              <p>VER LISTA COMPLETA DE PROYECTOS</p>
-              <Image src={ArrowIcon} alt="arrow down to see projects"></Image>
-            </div>
 
-        </Col>
-      </Row>
+
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center">
+          <div onClick={executeScroll} className="button-see-more-projects-container">
+                <p>VER LISTA COMPLETA DE PROYECTOS</p>
+                <Image src={ArrowIcon} alt="arrow down to see projects"></Image>
+          </div>
+        </Row>
+      </Col>
     </Container>
     <section fluid='true' className="map-container">
       <Map projectsData= {projectsData} />

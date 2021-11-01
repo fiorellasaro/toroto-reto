@@ -13,7 +13,7 @@ function map({ projectsData }) {
 
   const [viewport, setViewport] = useState({
         width: '100%',
-        height: '90vh',
+        height: '100vh',
         zoom: 5,
         longitude: -99.1319437,
         latitude: 18.47103,
