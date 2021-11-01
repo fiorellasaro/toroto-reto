@@ -21,8 +21,8 @@
             height: 32px;
             img{
                 @include for-phone{
-                    min-width: 15px !important;
-                    min-height: 15px !important;
+                    min-width: 25px !important;
+                    min-height: 25px !important;
                 }
             }
         }
