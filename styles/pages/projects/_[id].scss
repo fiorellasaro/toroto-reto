@@ -170,6 +170,11 @@
             margin-bottom: 70px;
             display: flex;
             flex-direction: column;
+            @include for-phone{
+                padding-left: 12px;
+                padding-right: 12px;
+                
+            }
         }
             display: flex;
             flex-direction: row;
@@ -184,9 +189,20 @@
             font-weight: normal;
             font-size: 48px;
             line-height: 56px;
+            @include for-phone{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 28px;
+            }
         }
     }
     &-map{
+        @include for-phone{
+            padding-left: 12px;
+            padding-right: 12px;
+            
+        }
         margin-top: 70px;
         h2{
             margin-bottom: 25px;
@@ -196,6 +212,9 @@
             object-fit: cover !important;
             margin-left: auto !important;
             margin-right: auto !important;
+            @include for-phone{
+                min-width: 100% !important;
+            }
         }
     }
 
@@ -216,6 +235,14 @@
         outline:none !important;
         border-color: none !important;
         box-shadow: none !important
+    }
+    @include for-phone{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.15px;
+        padding-bottom: 9px !important;
+        padding-top: 9px !important;
     }
 }
 

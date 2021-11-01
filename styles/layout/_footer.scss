@@ -12,10 +12,19 @@
         justify-content: space-between;
         align-items: center;
         gap: 40px;
+        @include for-phone{
+            gap: 3px;
+        }
         a{
             margin: 0;
             padding: 0;
             height: 32px;
+            img{
+                @include for-phone{
+                    min-width: 15px !important;
+                    min-height: 15px !important;
+                }
+            }
         }
     }
 }

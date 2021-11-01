@@ -2,6 +2,7 @@
     &-content{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     &-value{
         text-align: center;
@@ -11,6 +12,15 @@
         line-height: 72px;
         color: $primary;
         z-index: 2;
+        @include for-phone{
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 50px;
+            display: flex;
+            align-items: center;
+            text-align: center !important;
+            letter-spacing: -0.5px;
+        }
     }
     &-name{
         margin-top: -50px;
@@ -19,6 +29,17 @@
         padding: 40px 10px 10px 10px;
         text-align: center;
         border-radius: 10px;
+        @include for-phone{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            /* identical to box height, or 117% */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.15px;
+        }
         
     }
 
