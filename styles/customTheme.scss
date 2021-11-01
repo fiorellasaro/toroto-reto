@@ -20,10 +20,15 @@ h1{
     line-height: 56px;
   }
   
+@mixin for-phone{
+  @media only screen and (min-width : 100px) and (max-width : 480px) {
+      @content
+  }
+}
 
 
 // @import '../scss/bootstrap.scss';
-
+// @import '../node_modules/react-bootstrap/';
 @import '../styles/scss/bootstrap.scss';
 @import "./pages/_home";
 @import "./components/_map"; @import "./components/_popup";   @import "./components/_cardProject"; @import "./components/_services";

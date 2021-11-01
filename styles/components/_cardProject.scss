@@ -4,6 +4,10 @@
         max-height: 700px;
         border-radius: 20px !important;
         color: $negro-toroto;
+        @include for-phone{
+            width: 100%;
+            max-height: auto;
+        }
 
         img{
             width: 512px;
@@ -11,6 +15,9 @@
             border-radius: 20px 20px 0px 0px;
             padding: 0;
             object-fit: cover;
+            @include for-phone{
+                height: 94px !important;
+            }
         }
         .btn{
             width: 100% !important;
@@ -23,12 +30,23 @@
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 0.15px;
+        @include for-phone{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.15px;
+        }
     }
     &-name{
         font-style: normal;
         font-weight: normal;
         font-size: 34px;
         line-height: 36px;
+        @include for-phone{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
     &-description{
         font-style: normal;
@@ -36,9 +54,17 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.25px;
+        @include for-phone{
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.25px;
+        }
     }
     &-info{
         padding: 24px 32px 32px 32px;
+        @include for-phone{
+            padding: 16px 24px 22px 24px;
+        }
     }
     &-services{
         display: flex;
