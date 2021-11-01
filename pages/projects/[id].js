@@ -12,23 +12,23 @@ const project = (props) => {
 
   return (
     <>
-      <Container className="container-fluid">
+      <Container className="container-fluid mobile-padding">
         <div className="pt-5 general-container">
-          <div className="col-6 general-description">
+          <div className="general-description">
             <p className="general-location">{projectProp.location}</p>
             <p className="general-name">{projectProp.name}</p>
             <div className="general-services">
                       {
                           projectProp.services.map(service =>{
                               return (
-                                  <Services service={service} key={service}/>
+                                  <Services  service={service} key={service}/>
                               )
                           })
                       }
             </div>
             <p className="general-description-text">{projectProp.description}</p>
           </div>
-          <Image className="image-detail" src={imageProjects[props.index].src} alt={imageProjects[props.index].alt}></Image>
+          <Image className="image-detail" src={imageProjects[props.index].src} alt={imageProjects[props.index].alt} width={512} height={440}></Image>
         </div>
 
         <div className="general-problem">
