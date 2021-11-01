@@ -184,6 +184,9 @@
             margin-top: 15px;
             margin-bottom: 15px;
             gap: 5px;
+            @include for-phone{
+                
+            }
         &-title{
             font-style: normal;
             font-weight: normal;
